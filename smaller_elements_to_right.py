@@ -19,7 +19,7 @@ def num_of_smaller_elements_to_right(arr):
 		current_element = arr[i]
 		seen.append(current_element)
 		seen.sort()
-		location = seen.index(current_element) # returns the first occurence of the given element in the seen list (in case of duplicate values i.e. [0, 0, *1*, 1, 5, 7, ...]
+		location = seen.index(current_element) # returns the first occurence of the given element in the seen list (in case of duplicate values e.g. [0, 0, *1*, 1, 5, 7, ...]
 		if location == 0: # no elements smaller to the right in *arr*
 			solution.insert(0, 0)
 		else:
